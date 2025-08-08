@@ -178,4 +178,42 @@ console.log("-------------------------------------------------------------------
 console.log(`=== CONTINUAÇÃO DA JORNADA DE ${nome} ===`);
 console.log("");
 
-//Versão Final
+//EPÍLOGO - RESULTADO FINAL
+if(poderinimigo <= 0){
+    console.log(`No capricho ${nome} se torna um dos maiores guerreiros do mundo`);
+    experiencia += 90;
+    combatesVencidos++;
+    console.log(`A lenda ${nome}, cresce...tanto mentalmente quanto fisicamente`);
+    console.log(`A Vila faz uma festa para ${nome}, que fica muito feliz e orgulhoso de si mesmo`)
+}else{
+    console.log(`A batalha foi dificil demais, mas ${nome} sobrevive para tentar lutar outro dia, se o reino ainda estiver nos seus altos`);
+}
+
+console.log("");
+console.log("FIM DO CAPITULO - Aguarde o próximo nivel da aventura");
+
+
+
+console.log("--------------------------------------------------------------------");
+
+
+let classeAtual1 = 'Guerreiro';
+let nivelAtual1 = 15;
+let vidaAtual1 = 100;
+let vidaMaxima1 = 100;
+let manaAtual1 = 300;
+let manaMaxima1 = 300;
+let moedasAtuais1 = 50;
+let xpAtual1 = 17000;
+let experiencia1 = 5;
+let localAtual1 = "Reino";
+
+
+//PRÓLOGO
+console.log(`Após o evento ocorrido na ${localAtual} e no ${localAtual1}, nosso herói ${nome}`);
+console.log(`Se prepara com um novo desafio novamente`);
+
+//Inventario Magico
+let inentario = ["Poção de Cura", "Escudo flamejante", "Armadura de Ferro"];
+let aliados = ["Liverapinto", "Guimapinto", "Tupipinto"];
+let inimigosEncontrados = ["Tralalaero Tralala", "Bombaridiro Crocodilo", "Tung tung tung sahur"];
