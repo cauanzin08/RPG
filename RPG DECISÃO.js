@@ -149,33 +149,3 @@ if(experiencia >= 50){
 
 console.log("--------------------------------------------------------------------");
 
-//CAPÍTULO 3
-console.log("CAPÍTULO 3: Grande Batalha Final");
-let poderinimigo = 80;
-
-//Combate
-if(vidaAtual <=80){
-    console.log(`${nome}, ve seu inimigo, um grande dragão e nem fica com medo, pois tem uma grande confiança em si mesmo, tenta até intimidalo com gritos e usa uma tatica inesperada para o seu adversario`);
-    console.log("Ataque final com toda a força restante");
-    poderinimigo -=(forcaAtual + 20);
-    manaAtual -= 80;
-}else if(agilidadeAtual >= 20){
-    console.log(`Após a chegada de ${nome}, ele não esperava que seria um Dragão gigantesco, e ficou com muito medo`)
-    console.log(`Sem perder tempo o Dragão o atacou com sua calda, ${nome} não estava esperando por esse moviemnto e foi lançado para longe`);
-    console.log(`${nome} se levanta e tenta mais vezes chegar perto do dragão, mas ele não deixava`);
-    console.log("Depois de ver que o dragão fazia sempre os mesmo movimentos para defender");
-    console.log(`${nome} teve uma grande ideia`);
-    console.log(`Com muito medo, mas pensativo, ${nome} usa o seu usa a sua agilidade, sumindo da vista do seu adversario, depois quando ele não estava esperando, ${nome} usou seu super poder, contra o dragão, que não resistiu`);
-    console.log("Com sua grande agilidade, consegue fazer um golpe certeiro");
-    poderinimigo -= forcaAtual;
-}else{
-    console.log("Luta defensiva e calculada, com a cabeça fria e o coração quente");
-    poderinimigo -= (forcaAtual/2);
-    vidaAtual += 10; //Recupera um pouco de vida
-}
-
-console.log("--------------------------------------------------------------------");
-console.log(`=== CONTINUAÇÃO DA JORNADA DE ${nome} ===`);
-console.log("");
-
-//Versão Final
