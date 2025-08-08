@@ -51,7 +51,6 @@ console.log(`Após uma grande Luta, conseguiu derrotar a Grande Serpente com sua
 console.log(`Com todos muito felizes pela vitoria do ${nome}, fizeram uma festa para comemorar`);
 
 
-
 console.log("--------------------------------------------------------------------");
 
 
@@ -84,7 +83,7 @@ let missaoAtual = 'Salvar Reino';
 
 //PRÓLOGO
 console.log(`Após o evento ocorrido na ${localAtual}, nosso herói ${nome}`);
-console.log(`da classe ${classe}, se depara com um novo desafio`);
+console.log(`da classe ${classe}, se depara com um novo desafio.`);
 
 console.log("--------------------------------------------------------------------");
 
@@ -95,18 +94,28 @@ console.log("CAPÍTLO 1: Aviso dos Anciões");
 
 //Verificação baseada no nivel do personagem
 if(nivelAtual > 10){
-    console.log("Um ancião confia em você: 'Você está preparado para essa missão");
+    console.log("Um ancião confia em Guarapinto: 'Você está preparado para essa missão");
     console.log(`${nome} confia em si mesmo, e vai a luta`);
+    console.log("Com sua confiança, ele caminha até o destino, para conseguir conquistar a vitória");
+    console.log("Pensativo, ele pensa como derrotar o inimigo");
+    console.log("Ele nunca teve uma batalha como essa");
+    console.log("Com isso a cabeça dele vai a loucura, e ele vai criando varias expectativas");
 }
 
 //Verificação de Recursos especiais
 if(moedasAtuais >= 100){
-    console.log(`Sua quantidade de ${moedasAtuais} preciosas no bolso, atraem alguns olharem cobiços`);
+    console.log(`${nome}, além de salvar a Vila, que poderia ser atacada a qualquer momento, ele era bem humilde com as pessoas mais simples`);
+    console.log(`Mesmo com sua humildade, algumas pessoa não gostavam muito dele`);
+    console.log(`Com sua grande quantidade de ${moedasAtuais} moedas preciosas no bolso, outras pessoas olham para ele com olhares cobiços`);
 }
 
 //Verificação de classe especifica
 if(classe === "Guerreiro"){
-    console.log("A força de Guerra flui entre as suas veias e artérias");
+    console.log("Mas mesmo assim a maioria do povo da Vila, dava todo o apoio para ele")
+    console.log("A força de Guerra fluia entre as suas veias e artérias");
+    console.log("Guarapinto fica muito ansioso para mostrar toda a sua experiancia e garra");
+    console.log("E parte para a sua jornada");
+    console.log("Em busca da Grande Vitoria");
 }
 
 console.log("--------------------------------------------------------------------");
@@ -116,11 +125,12 @@ console.log("CAPÍTULO 2: O caminho ao Destino");
 
 //Escolha dos Recursos
 if(moedasAtuais >= 50){
-    console.log(`com moedas suficientes ${nome} deve confiar nas suas incrveis habilidades`);
+    console.log(`Com moedas suficientes ${nome} deve confiar nas suas incriveis habilidades com sua espada, e sua agilidade`);
     forcaAtual += 2;
     defesaAtual +=2;
     moedasAtuais -=50;
-    console.log(`Força e defesa aumentara. Sobraram ${moedasAtuais} moedas restantes`);
+    console.log(`Após ir na loja comprar algumas coisas para a sua ajuda`);
+    console.log(`Sua força e defesa aumentara. Sobraram ${moedasAtuais} moedas restantes`);
 }else{
     console.log(`Sem moedas suficiente ${nome} deve confiar apenas em si mesmo`);
 }
@@ -133,7 +143,8 @@ if(experiencia >= 50){
     vidaAtual = vidaMaxima; //Vida Restaurada
 }else{
     console.log(`${nome} busca mais conhecimento e experiencia`);
-    console.log(`Sabedoria atual; ${experiencia} /100`);
+    console.log(`Mesmo não tendo muita experiencia, ${nome} ainda acredita em si mesmo e, sente que fara um ótimo confronto com sua espada ${NOMEARMA}`)
+    console.log(`Sua sabedoria atual, é de ${experiencia} /100, e sente que pode melhorar o seu conhecimento com essa batalha`);
 }
 
 console.log("--------------------------------------------------------------------");
@@ -144,11 +155,17 @@ let poderinimigo = 80;
 
 //Combate
 if(vidaAtual <=80){
-    console.log(`Com pouca vida ${nome} usa uma tatica inesperada para o seu adversario`);
+    console.log(`${nome}, ve seu inimigo, um grande dragão e nem fica com medo, pois tem uma grande confiança em si mesmo, tenta até intimidalo com gritos e usa uma tatica inesperada para o seu adversario`);
     console.log("Ataque final com toda a força restante");
     poderinimigo -=(forcaAtual + 20);
     manaAtual -= 80;
 }else if(agilidadeAtual >= 20){
+    console.log(`Após a chegada de ${nome}, ele não esperava que seria um Dragão gigantesco, e ficou com muito medo`)
+    console.log(`Sem perder tempo o Dragão o atacou com sua calda, ${nome} não estava esperando por esse moviemnto e foi lançado para longe`);
+    console.log(`${nome} se levanta e tenta mais vezes chegar perto do dragão, mas ele não deixava`);
+    console.log("Depois de ver que o dragão fazia sempre os mesmo movimentos para defender");
+    console.log(`${nome} teve uma grande ideia`);
+    console.log(`Com muito medo, mas pensativo, ${nome} usa o seu usa a sua agilidade, sumindo da vista do seu adversario, depois quando ele não estava esperando, ${nome} usou seu super poder, contra o dragão, que não resistiu`);
     console.log("Com sua grande agilidade, consegue fazer um golpe certeiro");
     poderinimigo -= forcaAtual;
 }else{
@@ -161,15 +178,4 @@ console.log("-------------------------------------------------------------------
 console.log(`=== CONTINUAÇÃO DA JORNADA DE ${nome} ===`);
 console.log("");
 
-//EPÍLOGO - RESULTADO FINAL
-if(poderinimigo <= 0){
-    console.log(`No capricho ${nome} se torna um dos maiores guerreiros do mundo`);
-    experiencia += 90;
-    combatesVencidos++;
-    console.log(`A lenda ${nome}, cresce...tanto mentalmente quanto fisicamente`);
-}else{
-    console.log(`A batalha foi dificil demais, mas ${nome} sobrevive para tentar lutar outro dia, se o reino ainda estiver nos seus altos`);
-}
-
-console.log("");
-console.log("FIM DO CAPITULO - Aguarde o próximo nivel da aventura");
+//Versão Final
